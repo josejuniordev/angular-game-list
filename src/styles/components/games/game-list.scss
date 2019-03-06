@@ -22,4 +22,19 @@
   display: grid;
   width: 100%;
   align-items: stretch;
+  text-align: center;
+}
+
+.game-card-logo {
+  margin: 0 0 $mediumSize 0;
+
+  img {
+    display: block;
+    max-width: 100%;
+    margin: auto;
+  }
+}
+
+.game-card-title {
+  margin: 0;
 }

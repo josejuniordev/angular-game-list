@@ -1,5 +1,8 @@
 <div class="section game-card-info">
   <div class="content filled">
-    {{ game.name }}
+    <figure class="game-card-logo">
+      <img src="{{ game.logo }}" alt="{{ game.name }}">
+    </figure>
+    <h3 class="game-card-title">{{ game.name }}</h3>
   </div>
 </div>

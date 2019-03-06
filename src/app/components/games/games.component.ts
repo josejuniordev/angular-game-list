@@ -5,7 +5,6 @@ import Game from '../../classes/Game';
 @Component({
   selector: 'app-games',
   templateUrl: './games.component.html',
-  styleUrls: ['./games.component.scss']
 })
 export class GamesComponent implements OnInit {
   public games: Game[] = [];

@@ -6,6 +6,7 @@ import { GameListComponent } from './components/games/game-list/game-list.compon
 import { GamesComponent } from './components/games/games.component';
 import {HttpClientModule} from '@angular/common/http';
 import { GameCardComponent } from './components/games/game-list/game-card/game-card.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { GameCardComponent } from './components/games/game-list/game-card/game-c
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

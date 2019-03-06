@@ -1,0 +1,8 @@
+a {
+  color: $linkPrimaryColor;
+}
+
+a:hover, a:active {
+  color: $linkSecondaryColor;
+  text-decoration: none;
+}

@@ -1,3 +1,7 @@
-<p>
-  game-list works!
-</p>
+<div class="games-wrapper">
+  <app-game-card
+    class="game-card"
+    *ngFor="let game of games"
+    [game]="game"
+  ></app-game-card>
+</div>

@@ -2,11 +2,14 @@
   <header>
     <h1>Lista de Jogos</h1>
   </header>
-  <section class="default-section search-area">
-    <p>busca aqui</p>
+  <section class="section search-area">
+    <div class="content filled">
+      <p>busca aqui</p>
+    </div>
   </section>
-  <section class="default-section search-area">
-    <p>Lista aqui</p>
+
+  <section *ngIf="games.length" class="section">
+    <app-game-list [games]="games"></app-game-list>
   </section>
 
 </main>

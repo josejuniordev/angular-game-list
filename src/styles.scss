@@ -1,10 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
 body {
   font-family: 'Raleway', sans-serif;
+  background: #eeeeee;
 }
 
 main {
   max-width: 1024px;
 }
 
-@import 'styles/base';
+// settings
+@import "styles/settings.scss";
+
+// tools
+
+// generic
+
+// base
+@import "styles/base";
+
+// object
+
+// components
+@import "styles/components/games/game-list";
+
+// trumps / (helpers)

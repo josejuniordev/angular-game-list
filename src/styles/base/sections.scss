@@ -1,3 +1,15 @@
-* {
-  display: none;
-};
+
+.section {
+  .content {
+    padding: $mediumSize;
+
+    &.filled {
+      background: #fff;
+      border: 1px solid #ddd;
+    }
+  }
+
+  &:not(:last-child) {
+    margin-bottom: $mediumSize;
+  }
+}

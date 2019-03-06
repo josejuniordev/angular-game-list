@@ -3,6 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { map } from 'rxjs/operators';
 import { Observable } from 'rxjs';
 import Game from '../../classes/Game';
+import {GameRequestResponse} from '../../classes/game-request-response';
 
 @Injectable({
   providedIn: 'root'
@@ -26,8 +27,7 @@ export class GamesService {
       }
     )
       .pipe(
-        map(gamesData => {
-          alert('test')
+        map(((gamesData: GameRequestResponse) => {
           if (gamesData && gamesData.top) {
             return gamesData.top.map(
               source => {
@@ -38,7 +38,8 @@ export class GamesService {
           } else {
             return [];
           }
+
         })
-      );
+      ));
   }
 }

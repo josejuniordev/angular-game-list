@@ -7,13 +7,15 @@ import { GamesComponent } from './components/games/games.component';
 import {HttpClientModule} from '@angular/common/http';
 import { GameCardComponent } from './components/games/game-list/game-card/game-card.component';
 import { AppRoutingModule } from './app-routing.module';
+import { GameDetailComponent } from './components/games/game-detail/game-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     GameListComponent,
     GamesComponent,
-    GameCardComponent
+    GameCardComponent,
+    GameDetailComponent
   ],
   imports: [
     BrowserModule,

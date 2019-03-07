@@ -7,7 +7,7 @@ import { GamesComponent } from './components/games/games.component';
 import {HttpClientModule} from '@angular/common/http';
 import { GameCardComponent } from './components/games/game-list/game-card/game-card.component';
 import { AppRoutingModule } from './app-routing.module';
-import { GameDetailComponent } from './components/games/game-detail/game-detail.component';
+import { GameDetailsComponent } from './components/games/game-details/game-details.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +15,7 @@ import { GameDetailComponent } from './components/games/game-detail/game-detail.
     GameListComponent,
     GamesComponent,
     GameCardComponent,
-    GameDetailComponent
+    GameDetailsComponent
   ],
   imports: [
     BrowserModule,

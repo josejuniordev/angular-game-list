@@ -37,7 +37,7 @@ export class GamesService {
                 return gamesData.top.map(
                   source => {
                     const { game } = source;
-                    return new Game(game._id, game.name, game.popularity, game.logo.large);
+                    return new Game(game._id, game.name, game.popularity, game.logo);
                   }
                 );
               } else {

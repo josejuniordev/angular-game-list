@@ -1,8 +1,10 @@
+import { GameLogoKeys } from './single-game-request-response';
+
 class Game {
-  id;
-  name;
-  popularity;
-  logo;
+  id: number;
+  name: string;
+  popularity: number;
+  logo: GameLogoKeys;
 
   constructor(id, name, popularity, logo) {
     this.id = id;

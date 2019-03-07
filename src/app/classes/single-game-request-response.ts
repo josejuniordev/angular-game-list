@@ -9,7 +9,7 @@ interface GameProperties {
   logo: GameLogoKeys;
 }
 
-interface GameLogoKeys {
+export interface GameLogoKeys {
   large: string;
   medium: string;
   small: string;

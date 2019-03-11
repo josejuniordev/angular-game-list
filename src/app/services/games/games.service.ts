@@ -77,5 +77,17 @@ export class GamesService {
         }
       });
     });
+  };
+
+  filterGames(gamesList, term): Promise<Game[]> {
+    const regex = new RegExp(term, 'i');
+    return new Promise(resolve => {
+      const matched = gamesList.filter(game => {
+        const match = game.name.match(regex);
+        return !!(match && match.length);
+      });
+
+      resolve(matched);
+    });
   }
 }

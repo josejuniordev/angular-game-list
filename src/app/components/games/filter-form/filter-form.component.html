@@ -1,0 +1,22 @@
+<form [formGroup]="filterForm">
+  <div class="form-row align-items-center">
+    <div class="form-group col-md-9">
+      <input
+        type="text"
+        class="form-control"
+        placeholder="digite o nome do jogo"
+        formControlName="name"
+      >
+    </div>
+    <div class="form-group col-md-3">
+      <div class="form-check form-check-inline">
+        <input type="radio" id="checkAsc" name="filterOrdenation" value="asc" class="form-check-input">
+        <label for="checkAsc" class="form-check-label">crescente</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input type="radio" id="checkDesc" name="filterOrdenation" value="desc" class="form-check-input">
+        <label for="checkDesc" class="form-check-label">decrescente</label>
+      </div>
+    </div>
+  </div>
+</form>

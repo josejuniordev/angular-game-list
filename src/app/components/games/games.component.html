@@ -4,12 +4,20 @@
   </header>
   <section class="section search-area">
     <div class="content filled">
-      <p>busca aqui</p>
+      <app-filter-form
+        debounceTime="200"
+        (onFilter)="onFilterHandler($event)"
+      ></app-filter-form>
     </div>
   </section>
 
-  <section *ngIf="games.length" class="section">
+  <section *ngIf="games.length; then thenBlock else elseBlock" class="section"></section>
+  <ng-template #thenBlock>
     <app-game-list [games]="games"></app-game-list>
-  </section>
+  </ng-template>
+
+  <ng-template #elseBlock>
+    <p>Nenhum dado para ser exibido.</p>
+  </ng-template>
 
 </main>

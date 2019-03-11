@@ -18,4 +18,14 @@ export class GamesComponent implements OnInit {
       });
   }
 
+  onFilterHandler(term) {
+    this.gamesService.getGames()
+      .then(games => {
+        this.gamesService.filterGames(games, term)
+          .then(filteredGames => {
+            this.games = filteredGames;
+          });
+      });
+  }
+
 }

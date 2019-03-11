@@ -8,6 +8,8 @@ import {HttpClientModule} from '@angular/common/http';
 import { GameCardComponent } from './components/games/game-list/game-card/game-card.component';
 import { AppRoutingModule } from './app-routing.module';
 import { GameDetailsComponent } from './components/games/game-details/game-details.component';
+import { FilterFormComponent } from './components/games/filter-form/filter-form.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -15,12 +17,14 @@ import { GameDetailsComponent } from './components/games/game-details/game-detai
     GameListComponent,
     GamesComponent,
     GameCardComponent,
-    GameDetailsComponent
+    GameDetailsComponent,
+    FilterFormComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

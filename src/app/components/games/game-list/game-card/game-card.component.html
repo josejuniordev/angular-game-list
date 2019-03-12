@@ -1,4 +1,4 @@
-<div class="section game-card-info">
+<div *ngIf="game" class="section game-card-info">
   <div class="content filled">
     <figure class="game-card-logo">
       <img src="{{ game.logo.large }}" alt="{{ game.name }}">

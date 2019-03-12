@@ -1,12 +1,28 @@
 import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
+import {AppRoutingModule} from './app-routing.module';
+import {GamesComponent} from './components/games/games.component';
+import {GameDetailsComponent} from './components/games/game-details/game-details.component';
+import {FilterFormComponent} from './components/games/filter-form/filter-form.component';
+import {GameListComponent} from './components/games/game-list/game-list.component';
+import {GameCardComponent} from './components/games/game-list/game-card/game-card.component';
+import {ReactiveFormsModule} from '@angular/forms';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [
-        AppComponent
+        AppComponent,
+        GamesComponent,
+        GameDetailsComponent,
+        FilterFormComponent,
+        GameListComponent,
+        GameCardComponent
       ],
+      imports: [
+        AppRoutingModule,
+        ReactiveFormsModule
+      ]
     }).compileComponents();
   }));
 
@@ -14,18 +30,5 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
     expect(app).toBeTruthy();
-  });
-
-  it(`should have as title 'gamelist'`, () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('gamelist');
-  });
-
-  it('should render title in a h1 tag', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain('Welcome to gamelist!');
   });
 });
